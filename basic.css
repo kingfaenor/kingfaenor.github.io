@@ -1,0 +1,155 @@
+body {
+    font-family: "Arial", Helvetica, sans-serif; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding-left: 14px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 170px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    margin:auto;
+    width: 65%;
+    padding-bottom: 10px;
+}
+
+#subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+#normal {
+    min-width:570px;
+    width:55%;
+    margin:auto;
+    font-size: 20px;
+    color:rgb(70,70,70);
+}
+
+.pretty_image {
+    border-top: 1px solid rgba(100, 100, 100, .3);
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    max-width: 60%;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-top:3px;
+}
+
+.top_button {
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    top:5px;
+    /*top:8px;*/
+    /*border-top: 3px solid black;*/
+}
+
+.top_button_caret {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+#caption {
+    padding-left: 50px;
+    color: grey;
+    font-style: italic;
+    font-size: 17px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#text {
+    background: rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.download_button {
+    background: rgb(119, 111, 111);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    max-width:90px;
+    cursor: pointer;
+    color: white;
+}
+
+p {
+    margin:0px;
+    padding: 0px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin:0px;
+    padding: 0px;
+}
+
+.download_a {
+    text-decoration: none;
+}
+
+.download_button:hover {
+    color: lightblue;
+}
+
+.download_description {
+    padding-left: 20px;
+}
+
+.underline {
+    border-bottom: 2px solid black;
+}
+
